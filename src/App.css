@@ -87,6 +87,22 @@ h2 {
   width: 400px;
 }
 
+.pastReports {
+  display: flex;
+}
+
+.pictureHover {
+  /* width: 150px;
+  height: 150px;
+  margin: 10px; */
+  transition: transform 0.3s ease;
+}
+
+.pictureHover:hover {
+  transform: scale(1.2);
+
+}
+
 @media only screen and (max-width: 1064px) {
   .pastReports {
     display: flex;
@@ -109,7 +125,7 @@ h2 {
     flex-direction: column;
   }
 
-  .daily p{
+  .daily p {
     text-align: center;
   }
 }
