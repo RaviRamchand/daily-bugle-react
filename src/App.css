@@ -92,9 +92,6 @@ h2 {
 }
 
 .pictureHover {
-  /* width: 150px;
-  height: 150px;
-  margin: 10px; */
   transition: transform 0.3s ease;
 }
 
@@ -107,6 +104,7 @@ h2 {
   .pastReports {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .pastReports img {
