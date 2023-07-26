@@ -1,38 +1,173 @@
-.App {
+ul li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.header {
+  text-align: center;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+  font-size: large;
+}
+
+img {
+  width: 45%;
+  align-self: center;
+  -webkit-user-drag: none;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+.daily {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 70px;
+}
+
+.daily p {
+  margin-left: 15px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #EE4B2B;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+}
+
+p.city {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menace p {
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.imageBorder img {
+  border: 3px solid black;
+  border-radius: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+iframe {
+  display: block;
+  margin: auto;
+}
+
+.pastReports {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  text-align: center;
+  font-weight: normal;
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pastReports img {
+  width: 250px;
+  margin-right: 15px;
+}
+
+.daily img {
+  width: 400px;
+}
+
+@media only screen and (max-width: 1064px) {
+  .pastReports {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .pastReports img {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 842px) {
+  .daily {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageBorder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .daily p{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 643px) {
+  ul li {
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  ul li {
+    margin-right: 30px;
+  }
+
+  iframe {
+    width: 400px;
+    height: 200px;
+  }
+
+  .images img {
+    width: 100%;
+  }
+
+  .daily img {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 608px) {
+  iframe {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 563px) {
+  ul li {
+    display: block;
+    margin-bottom: 5px;
+
+  }
+
+  ul {
+    font-size: 1px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 298px) {
+  iframe {
+    width: 295px;
+    height: 210px;
   }
 }
